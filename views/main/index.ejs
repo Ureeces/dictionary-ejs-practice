@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Words</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Word List</h1>
+    <% if(wordsList.length) { wordsList.forEach(element => { %>
+      <p>
+        <a href="/words/single-word/<%= element.id %>"><%= element.word %></a>
+      </p>
+   <% })} else {%>
+    <h1>No Words Found</h1>
+   <% } %>  
+
+   <button><a href="/words/add-word">Add A Word</a></button>
+  </body>
+</html>

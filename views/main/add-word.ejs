@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Word</title>
+</head>
+<body>
+    <h1>Add a Word</h1>
+    <form action="/words/add-word" method="POST">
+    <div>
+        <label for="word">Word:</label>
+        <input type="text" id="word" name="word" />
+    </div>
+    <div>
+        <label for="meaning">Meaning:</label>
+        <textarea type="text" id="meaning" name="meaning"></textarea><br />
+    </div>
+    <button type="submit">Add a Word</button>
+    </form>
+</body>
+</html>
